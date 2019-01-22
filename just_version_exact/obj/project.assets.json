@@ -1,0 +1,80 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "NUnit > 3.6.2 < 3.6.2"
+    ]
+  },
+  "packageFolders": {
+    "/Users/kirill/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/kirill/Work/dotnet-version-rules/just_version_exact/simple.csproj",
+      "projectName": "simple",
+      "projectPath": "/Users/kirill/Work/dotnet-version-rules/just_version_exact/simple.csproj",
+      "packagesPath": "/Users/kirill/.nuget/packages/",
+      "outputPath": "/Users/kirill/Work/dotnet-version-rules/just_version_exact/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/kirill/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "(3.6.2, 3.6.2)"
+          }
+        }
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency NUnit (> 3.6.2 && < 3.6.2) does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package NUnit with version (> 3.6.2 && < 3.6.2)\n  - Found 43 version(s) in nuget.org [ Nearest version: 3.7.0 ]",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,21 @@
 # dotnet-version-rules
 
+## References
+
+https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution
+
+## Rules
+
+1. If we have `*` in version it should be resolved to maximum possible.
+    1. `*_fix_resolved_to_max` NUnit 2.6.* -> 2.6.7
+    2. `*_minor_resolved_to_max` NUnit 2.* -> 2.7.0
+    3. `*_major_resolved_to_max` NUnit * -> 3.11.0
+2. If we use exact version in PackageReference it is `>=` by default. NUnit 3.6.2 not existing version. It will be resolved to 3.7.0 (nearest bigger). Example `just_version_is_more_or_equal`.
+3. If no version in PackageReference. Will be resolved as minimum possible (2.5.7.10213 in our case). Example `no_version_to_min`.
+4. NUnit 3.0 -> 3.0.0 (not `alpha`, `beta` or `rc`). So, minimum possible, but not with prefix. Example `ver_to_min`.
+5. TargetFramework really affects dependency list. Example `target_with_deps` and `target_without_deps`.
+6. To set exact version you should use something like `(3.6.2)`. Example `just_version_exact`. Fails because NUnit 3.6.2 doesn't exists.
+
 ## NUnit versions
 
 - 2.5.7.10213
@@ -45,14 +61,3 @@
 - 3.10.0
 - 3.10.1
 - 3.11.0
-
-## Rules
-
-1. If we have `*` in version it should be resolved to maximum possible.
-    1. `*_fix_resolved_to_max` NUnit 2.6.* -> 2.6.7
-    2. `*_minor_resolved_to_max` NUnit 2.* -> 2.7.0
-    3. `*_major_resolved_to_max` NUnit * -> 3.11.0
-2. If we use exact version in PackageReference it is `>=` by default. NUnit 3.6.2 not existing version. It will be resolved to 3.7.0 (nearest bigger). Example `just_version_is_more_or_equal`.
-3. If no version in PackageReference. Will be resolved as minimum possible (2.5.7.10213 in our case). Example `no_version_to_min`.
-4. NUnit 3.0 -> 3.0.0 (not `alpha`, `beta` or `rc`). So, minimum possible, but not with prefix. Example `ver_to_min`.
-5. TargetFramework really affects dependency list. Example `target_with_deps` and `target_without_deps`.
