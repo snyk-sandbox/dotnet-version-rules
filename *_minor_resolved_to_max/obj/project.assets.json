@@ -1,0 +1,84 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "NUnit/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NUnit/2.7.0": {
+      "sha512": "Witcq5XITxeQ4oFLU1y/km2rThH15H5U4pq+v9MQ43dvLbXbZ5BaHa0HPgvafFvb6LqC64ja4OZhIkHU0ZNM6w==",
+      "type": "package",
+      "path": "nunit/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/nunit.framework.dll",
+        "lib/nunit.framework.xml",
+        "license.txt",
+        "nunit.2.7.0.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "NUnit >= 2.*"
+    ]
+  },
+  "packageFolders": {
+    "/Users/kirill/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/kirill/Work/dotnet-deps/projects/*_minor_resolved_to_max/simple.csproj",
+      "projectName": "simple",
+      "projectPath": "/Users/kirill/Work/dotnet-deps/projects/*_minor_resolved_to_max/simple.csproj",
+      "packagesPath": "/Users/kirill/.nuget/packages/",
+      "outputPath": "/Users/kirill/Work/dotnet-deps/projects/*_minor_resolved_to_max/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/kirill/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "[2.*, )"
+          }
+        }
+      }
+    }
+  }
+}

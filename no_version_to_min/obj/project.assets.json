@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "NUnit/2.5.7.10213": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.mocks.dll": {},
+          "lib/pnunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.mocks.dll": {},
+          "lib/pnunit.framework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NUnit/2.5.7.10213": {
+      "sha512": "7mRldL4eHOWgskfdyWM6vUvriA4uRWmdJA1jgLM8DUpS9kbhlRqSSfATBguP0IAWu7DWaNZokBqkK4R2smTJ5Q==",
+      "type": "package",
+      "path": "nunit/2.5.7.10213",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.ico",
+        "NUnitFitTests.html",
+        "Tools/NUnitFitTests.html",
+        "Tools/NUnitTests.config",
+        "Tools/NUnitTests.nunit",
+        "Tools/agent.conf",
+        "Tools/agent.log.conf",
+        "Tools/launcher.log.conf",
+        "Tools/lib/Failure.png",
+        "Tools/lib/Ignored.png",
+        "Tools/lib/Inconclusive.png",
+        "Tools/lib/Skipped.png",
+        "Tools/lib/Success.png",
+        "Tools/lib/fit.dll",
+        "Tools/lib/log4net.dll",
+        "Tools/lib/nunit-console-runner.dll",
+        "Tools/lib/nunit-gui-runner.dll",
+        "Tools/lib/nunit.core.dll",
+        "Tools/lib/nunit.core.interfaces.dll",
+        "Tools/lib/nunit.fixtures.dll",
+        "Tools/lib/nunit.uiexception.dll",
+        "Tools/lib/nunit.uikit.dll",
+        "Tools/lib/nunit.util.dll",
+        "Tools/nunit-agent-x86.exe",
+        "Tools/nunit-agent-x86.exe.config",
+        "Tools/nunit-agent.exe",
+        "Tools/nunit-agent.exe.config",
+        "Tools/nunit-console-x86.exe",
+        "Tools/nunit-console-x86.exe.config",
+        "Tools/nunit-console.exe",
+        "Tools/nunit-console.exe.config",
+        "Tools/nunit-x86.exe",
+        "Tools/nunit-x86.exe.config",
+        "Tools/nunit.exe",
+        "Tools/nunit.exe.config",
+        "Tools/nunit.framework.dll",
+        "Tools/pnunit-agent.exe",
+        "Tools/pnunit-agent.exe.config",
+        "Tools/pnunit-launcher.exe",
+        "Tools/pnunit-launcher.exe.config",
+        "Tools/pnunit.framework.dll",
+        "Tools/pnunit.tests.dll",
+        "Tools/runFile.exe",
+        "Tools/runFile.exe.config",
+        "Tools/runpnunit.bat",
+        "Tools/test.conf",
+        "fit-license.txt",
+        "lib/nunit.framework.dll",
+        "lib/nunit.framework.xml",
+        "lib/nunit.mocks.dll",
+        "lib/pnunit.framework.dll",
+        "license.txt",
+        "nunit.2.5.7.10213.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "NUnit"
+    ]
+  },
+  "packageFolders": {
+    "/Users/kirill/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/kirill/Work/dotnet-deps/projects/no_version/simple.csproj",
+      "projectName": "simple",
+      "projectPath": "/Users/kirill/Work/dotnet-deps/projects/no_version/simple.csproj",
+      "packagesPath": "/Users/kirill/.nuget/packages/",
+      "outputPath": "/Users/kirill/Work/dotnet-deps/projects/no_version/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/kirill/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "(, )"
+          }
+        }
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency NUnit does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    }
+  ]
+}
